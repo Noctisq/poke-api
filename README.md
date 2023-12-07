@@ -1,7 +1,7 @@
 
 # Poke-api
 
-A basic react app to fetch pokemon data and print it into the page with a basic pagination.
+A basic responsive react app to fetch pokemon data and print it into the page with a basic pagination.
 You can check it out deployed here: https://noctisq.github.io/poke-api/
 
 
