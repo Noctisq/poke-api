@@ -1,42 +1,40 @@
 import { useEffect, useState } from 'react';
-import { PokemonTypeList } from './PokemonTypeList'
+import { PokemonTypeList } from './PokemonTypeList';
+
 export default function PokemonCard({ data }) {
-    const [pokemonData, setPokemonData] = useState(null);
-    useEffect(() => {
-        fetch(data.url).then(data => {
-            return data.json()
-        }).then(response => {
-            setPokemonData(response);
-        }).catch(err => {
-            console.log(err);
-        })
+  const [pokemonData, setPokemonData] = useState(null);
 
-    }, [data]);
-    return (
-        <li className='pokemon-card'>
+  useEffect(() => {
+    fetch(data.url)
+      .then(data => data.json())
+      .then(response => {
+        setPokemonData(response);
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  }, [data]);
 
-            <div className='pokemon-title'>
-
-                <div className='pokemon-number'>
-                    {pokemonData && <h4>  #{pokemonData.id} </h4>}
-
-                </div>
-
-                <div className='pokemon-name'>
-                    {pokemonData && <h4> {pokemonData.name} </h4>}
-                </div>
-
-
+  return (
+    <li className='pokemon-card'>
+      {pokemonData && (
+        <>
+          <div className='pokemon-title'>
+            <div className='pokemon-number'>
+              <h4>#{pokemonData.id}</h4>
             </div>
-
-            {pokemonData && <img src={pokemonData.sprites.front_default} />}
-
-            <div className='pokemon-types'>
-                {pokemonData && <PokemonTypeList types={pokemonData.types} />}
+            <div className='pokemon-name'>
+              <h4>{pokemonData.name}</h4>
             </div>
+          </div>
 
+          <img src={pokemonData.sprites.front_default} alt={pokemonData.name} />
 
-        </li>
-    );
-
+          <div className='pokemon-types'>
+            <PokemonTypeList types={pokemonData.types} />
+          </div>
+        </>
+      )}
+    </li>
+  );
 }
