@@ -95,8 +95,8 @@ footer {
 
 .button-pag {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
-  background: rgb(145, 92, 182);
+  color: rgba(255, 255, 255, 1);
+  background: rgb(72, 171, 224);
   padding: 15px 40px;
   border-radius: 4px;
   font-weight: normal;
@@ -108,7 +108,8 @@ li {
   list-style: none;
 }
 
+
 .button-pag:hover {
   color: rgba(255, 255, 255, 1);
-  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+  box-shadow: 0 5px 15px rgba(72, 171, 224, 0.4);
 }
