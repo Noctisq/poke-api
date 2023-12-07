@@ -4,11 +4,11 @@ import { useEffect, useState } from 'react';
 import PokemonCard from './components/PokemonCard'
 import Pagination  from './components/Pagination';
 import Loader from './components/Loader';
-
+import GET_POKEMON from './routes/GET/get-pokemon'
 function App() {
 
   const [pokemonList, setPokemonList] = useState([]);
-  const [currentPage, setCurrentPage] = useState("https://pokeapi.co/api/v2/pokemon/?limit=30");
+  const [currentPage, setCurrentPage] = useState(GET_POKEMON.LIST);
   const [nextPage, setnextPage] = useState(null);
   const [previousPage, setpreviousPage] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
