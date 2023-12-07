@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/poke-api/static/css/main.99dcda0c.css",
-    "main.js": "/poke-api/static/js/main.78e4f834.js",
-    "static/js/787.7fd0eab5.chunk.js": "/poke-api/static/js/787.7fd0eab5.chunk.js",
-    "static/media/logo.svg": "/poke-api/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/poke-api/index.html",
-    "main.99dcda0c.css.map": "/poke-api/static/css/main.99dcda0c.css.map",
-    "main.78e4f834.js.map": "/poke-api/static/js/main.78e4f834.js.map",
-    "787.7fd0eab5.chunk.js.map": "/poke-api/static/js/787.7fd0eab5.chunk.js.map"
+    "main.css": "/react-gh-pages/static/css/main.9b204589.css",
+    "main.js": "/react-gh-pages/static/js/main.26085b90.js",
+    "static/js/787.7fd0eab5.chunk.js": "/react-gh-pages/static/js/787.7fd0eab5.chunk.js",
+    "static/media/logo.svg": "/react-gh-pages/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/react-gh-pages/index.html",
+    "main.9b204589.css.map": "/react-gh-pages/static/css/main.9b204589.css.map",
+    "main.26085b90.js.map": "/react-gh-pages/static/js/main.26085b90.js.map",
+    "787.7fd0eab5.chunk.js.map": "/react-gh-pages/static/js/787.7fd0eab5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.99dcda0c.css",
-    "static/js/main.78e4f834.js"
+    "static/css/main.9b204589.css",
+    "static/js/main.26085b90.js"
   ]
 }
