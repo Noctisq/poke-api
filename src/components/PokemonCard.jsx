@@ -1,21 +1,19 @@
 import { useEffect, useState } from 'react';
 import { PokemonTypeList } from './PokemonTypeList'
-export function PokemonCard({ data }) {
+export default function PokemonCard({ data }) {
     const [pokemonData, setPokemonData] = useState(null);
     useEffect(() => {
         fetch(data.url).then(data => {
             return data.json()
         }).then(response => {
-            console.log(response)
             setPokemonData(response);
-            console.log(pokemonData);
         }).catch(err => {
             console.log(err);
         })
 
-    }, []);
+    }, [data]);
     return (
-        <div className='pokemon-card'>
+        <li className='pokemon-card'>
 
             <div className='pokemon-title'>
 
@@ -38,9 +36,7 @@ export function PokemonCard({ data }) {
             </div>
 
 
-        </div>
+        </li>
     );
 
 }
-
-export default PokemonCard;
